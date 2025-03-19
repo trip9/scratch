@@ -8,4 +8,6 @@ jobs:
         - name: checkout repo
           uses: actions/checkout@v4
         - name: executing shell script
-          run: ./ascii-script.sh
+          run: |
+            chmod +x ./ascii-script.sh
+            ./ascii-script.sh
